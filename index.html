@@ -12,13 +12,39 @@
 </head>
 <body>
 
-    <nav>
-        <ul>
-            <li>
-                <a href="components/boilerplate/boilerplate.html">Test component</a>
-            </li>
-        </ul>
+    <nav class="navbar is-dark" role="navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item is-size-3 is-uppercase" href="/">Bulmally</a>
+        </div>
     </nav>
+
+
+    <section class="hero is-primary is-medium is-bold">
+        <div class="hero-body">
+          <div class="container">
+            <h1 class="title">
+                Bulmally
+            </h1>
+            <h2 class="subtitle">
+                An accessibility ready frontend component framework for streamlining web development
+            </h2>
+          </div>
+        </div>
+      </section>
+
+    <section class="container">
+
+        <aside class="menu">
+            <nav>
+                <ul class="menu-list">
+                    <li>
+                        <a href="components/boilerplate/boilerplate.html">Test component</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+    </section>
 
     <script id="__bs_script__">//<![CDATA[
         document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.7'><\/script>".replace("HOST", location.hostname));

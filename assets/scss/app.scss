@@ -4,9 +4,8 @@
 // Import settings that configure Bulma variables.
 @import 'settings';
 
-// Import Bulma as the base framework.
+// Import all of Bulma as the base framework.
 @import '~bulma/bulma';
-
 
 // Here we import all component styles.
 @import '../../components/boilerplate/boilerplate';
