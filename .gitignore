@@ -1,0 +1,10 @@
+
+# Usual ignores
+dist/
+node_modules/
+
+# For Mac users
+.DSTORE
+
+# No error logs
+npm-debug.log

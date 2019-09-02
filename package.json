@@ -1,0 +1,64 @@
+{
+  "name": "bulmally",
+  "version": "1.0.0",
+  "description": "A frontend component framework for streamlining accessible web development projects.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch --display-error-details --display-reasons --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/devgeniem/bulmally.git"
+  },
+  "keywords": [
+    "bulma",
+    "css",
+    "sass",
+    "js",
+    "framework",
+    "accessibility"
+  ],
+  "author": "Geniem",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/devgeniem/bulmally/issues"
+  },
+  "homepage": "https://github.com/devgeniem/bulmally#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/register": "^7.5.5",
+    "@wordpress/eslint-plugin": "^3.0.0",
+    "autoprefixer": "^9.6.1",
+    "babel-loader": "^8.0.6",
+    "browser-sync": "^2.26.7",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "bulma": "^0.7.5",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
+    "cssnano": "^4.1.10",
+    "eslint": "^6.3.0",
+    "eslint-loader": "^3.0.0",
+    "highlight.js": "^9.15.10",
+    "html-loader": "^0.5.5",
+    "lint-staged": "^9.2.5",
+    "markdown-loader": "^5.1.0",
+    "marked": "^0.7.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "postcss-font-magician": "^2.2.2",
+    "postcss-loader": "^3.0.0",
+    "sanitize-html": "^1.20.1",
+    "sass-lint": "^1.13.1",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
+    "terser-webpack-plugin": "^1.4.1",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4"
+  }
+}

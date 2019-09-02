@@ -1,0 +1,15 @@
+// Set the charset.
+@charset 'utf-8';
+
+// Import settings that configure Bulma variables.
+@import 'settings';
+
+// Import Bulma as the base framework.
+@import '~bulma/bulma';
+
+
+// Here we import all component styles.
+@import '../../components/boilerplate/boilerplate';
+
+// Import GitHub styling for highlight.js.
+@import '~highlight.js/scss/github';
