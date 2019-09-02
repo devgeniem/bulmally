@@ -37,14 +37,14 @@ class Documentation {
             if ( ! pathname.includes( slug ) || ! component.documentation ) {
                 // Return, if this component is not currently viewed
                 // or the component does not contain documentation.
-                return;
+                continue;
             }
 
             // Get the container for the markdown document.
             const docContainer = document.getElementById( 'js-markdown' );
 
             if ( ! docContainer ) {
-                return;
+                continue;
             }
 
             // Add documentation to the container.

@@ -1,11 +1,11 @@
 /**
- * BoilerPlate JS controller.
+ * Navbar JS controller.
  */
 
 /**
- * Class BoilerPlate
+ * Class Navbar
  */
-export default class BoilerPlate {
+export default class Navbar {
     /**
      * This method is run automatically when the module is imported,
      * because it exports a new instance of itself.
@@ -14,7 +14,7 @@ export default class BoilerPlate {
         this.cache();
 
         // This must be set for each component.
-        this.documentation = require( './boilerplate.md' );
+        this.documentation = require( './navbar.md' );
 
         document.addEventListener(
             'DOMContentLoaded',
