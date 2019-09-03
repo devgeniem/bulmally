@@ -1,5 +1,57 @@
-// This file contains styles of the boilerplate component
+// This file contains styles for the navbar component
 
-.bulmally-boilerplate{
-    // Put component tyles here.
+.bulmally-navbar {
+
+    // Reset all buttons inside a navbar.
+    button {
+        background: none;
+        border: none;
+    }
+
+    .navbar-burger {
+        &:hover {
+            background: $navbar-dropdown-item-hover-background-color;
+        }
+    }
+
+    .navbar-dropdown-control {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .navbar-link {
+            flex: 1 1 auto;
+            padding-right: 1rem;
+
+            &:hover {
+                // The link background is controlled on the '.has-dropdown' level.
+                background: none;
+            }
+        }
+    }
+
+    .navbar-item.has-dropdown {
+        &:hover, &.is-active {
+            background-color: $navbar-item-hover-background-color;
+        }
+    }
+
+    .dropdown-toggler {
+        flex: 0 0 auto;
+        margin-right: 0.75rem;
+        position: relative; // Make the arrow stick to the button.
+        transition: transform $speed $easing;
+
+        &[aria-expanded="true"] {
+            transform: rotate(180deg);
+        }
+
+        .arrow {
+            @extend %arrow;
+            height: .75rem;
+            width: .75rem;
+            margin-top: -.5rem;
+            border-color: $navbar-dropdown-arrow;
+        }
+    }
 }

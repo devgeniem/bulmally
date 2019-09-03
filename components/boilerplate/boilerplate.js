@@ -31,9 +31,15 @@ export default class BoilerPlate {
     }
 
     /**
+     * Add event listeners.
+     */
+    events() {}
+
+    /**
      * Run when the document is ready.
      */
     docReady() {
         this.cache();
+        this.events();
     }
 }

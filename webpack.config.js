@@ -87,7 +87,7 @@ const allModules = {
                 {
                     loader: "markdown-loader",
                     options: {
-                        pedantic: true,
+                        pedantic: false,
                         renderer: new marked.Renderer()
                     }
                 }

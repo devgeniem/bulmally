@@ -15,30 +15,108 @@
 </head>
 <body>
 
-        <!-- Component library navigation markup comes here -->
-        <nav>
-            <a href="../../index.html">Back</a>
-        </nav>
+    <!-- Component library navigation markup comes here -->
+    <nav class="section">
+        <a class="button is-primary" href="../../index.html#components">Back to component list</a>
+    </nav>
 
-        <section class="section">
+    <section class="section">
 
-                <div class="container">
+        <div class="container">
 
-                    <!-- Component markup starts here -->
-                    <div class="bulmally-navbar">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ad accusamus, nulla, animi at non sapiente iusto sequi, perferendis maxime incidunt facilis! Libero culpa itaque vero ipsa facere accusantium obcaecati?</p>
-                    </div>
+            <!-- Component markup starts here -->
+            <nav class="navbar bulmally-navbar" role="navigation" aria-label="main navigation">
+                <div class="navbar-brand">
+                    <a class="navbar-item" href="#">
+                        <span class="is-sr-only">Home</span>
+                        <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" aria-hidden=true>
+                    </a>
 
+                    <button
+                        id="js-navbar-burger"
+                        class="navbar-burger burger"
+                        aria-expanded="false"
+                        aria-label="Open menu"
+                        aria-expanded="false"
+                        aria-controls="js-menu"
+                    >
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                        <span aria-hidden="true"></span>
+                    </button>
                 </div>
 
-            </section>
+                <div id="js-navbar-menu" class="navbar-menu">
+                    <div class="navbar-start">
+                        <a class="navbar-item">
+                            Home
+                        </a>
 
-        <section class="section">
+                        <a class="navbar-item">
+                            Documentation
+                        </a>
 
-            <section class="bulmally-component-documentation container content" id="js-markdown">
-            </section>
+                        <div class="navbar-item has-dropdown level">
+                            <div class="navbar-dropdown-control">
+                                <!-- The link is clickable. -->
+                                <a class="navbar-link is-arrowless" href="#">
+                                    More
+                                </a>
+                                <!-- This button implements the dropdown toggler. -->
+                                <button class="dropdown-toggler icon" aria-expanded=false aria-controls="js-navbar-dropdown-1">
+                                    <span class="is-sr-only">Open menu</span>
+                                    <i class="arrow" aria-hidden="true"></i>
+                                </button>
+                            </div>
 
+                            <!--
+                                Bulma does not hide dropdown menu on touch.
+                                We hide it here with the modifier class.
+                                Toggling is handled with JS.
+                            -->
+                            <div class="navbar-dropdown is-hidden-touch" id="js-navbar-dropdown-1">
+                                <a class="navbar-item">
+                                    About
+                                </a>
+                                <a class="navbar-item">
+                                    Jobs
+                                </a>
+                                <a class="navbar-item">
+                                    Contact
+                                </a>
+                                <hr class="navbar-divider">
+                                <a class="navbar-item">
+                                    Report an issue
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="buttons">
+                                <a class="button is-primary">
+                                    <strong>Sign up</strong>
+                                </a>
+                                <a class="button is-light">
+                                    Log in
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+
+    </section>
+
+    <section class="section">
+
+        <section class="bulmally-component-documentation container content" id="js-markdown">
         </section>
+
+    </section>
 
 </body>
 </html>
