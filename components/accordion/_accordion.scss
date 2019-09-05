@@ -1,0 +1,29 @@
+// This file contains all styles for the accordion element.
+.accordion-title-button {
+    appearance: none;
+
+    background-color: $white;
+    border: 0;
+    box-shadow: none;
+    width: 100%;
+
+    &[aria-expanded="true"] {
+        .icon {
+            transform: rotate(-180deg);
+        }
+    }
+}
+
+.accordion-title-icon {
+    transition: transform .2s ease;
+}
+
+.accordion-content {
+    margin-top: 1.25rem;
+    padding-top: 1.25rem;
+    border-top: .0625rem solid $grey-lighter;
+}
+
+.can-shrink {
+    flex-shrink: 1;
+}

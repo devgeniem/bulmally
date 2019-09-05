@@ -7,8 +7,7 @@
  */
 export default class Navbar {
     /**
-     * This method is run automatically when the module is imported,
-     * because it exports a new instance of itself.
+     * This method is run when a new instance of the class is created.
      */
     constructor() {
         // This must be set for each component.

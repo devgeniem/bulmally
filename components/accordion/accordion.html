@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bulmally | Boilerplate component</title>
+
+    <!-- Include complete assets for each component -->
+    <script src="/dist/app.js"></script>
+    <link rel="stylesheet" type="text/css" href ="/dist/app.css" />
+    <script src="/dist/vendor.js"></script>
+    <link rel="stylesheet" type="text/html" href ="/dist/vendor.css" />
+
+    <!-- Include Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+</head>
+<body>
+
+    <!-- Component library navigation markup comes here -->
+    <nav class="section">
+        <a class="button is-primary" href="../../index.html#components">Back to component list</a>
+    </nav>
+
+    <section class="section">
+
+        <div class="container">
+
+            <div id="js-bulmally-accordion" class="bulmally-accordion">
+
+                <div class="columns is-multiline">
+
+                    <div class="column is-10-tablet is-offset-1-tablet is-8-desktop is-offset-2-desktop">
+
+                        <div class="accordion-row box">
+
+                            <h3 class="h4 accordion-title">
+                                <!-- This controls the section. Toggling the state is done with JS -->
+                                <button
+                                    id="accordion-title-button-1"
+                                    class="accordion-title-button"
+                                    aria-expanded="false"
+                                    aria-controls="accordion-content-1">
+
+                                    <div class="level is-mobile">
+                                        <div class="level-left can-shrink">
+                                            <span class="level-item can-shrink accordion-title-text">
+                                                This heading is clickable
+                                            </span>
+                                        </div>
+                                        <div class="level-right">
+                                            <span class="level-item icon accordion-title-icon">
+                                                <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </button>
+                            </h3>
+
+                            <!-- The ID of this element has to be dynamically added. -->
+                            <div id="accordion-content-1" class="accordion-content">
+                                <div class="content is-small">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quisquam molestias. Quaerat molestiae nam, explicabo quo nisi corporis! Blanditiis quam quibusdam, facilis nihil odio nisi iusto ipsa laborum neque fugit.</p>
+
+                                    <h3>Lorem ipsum dolor sit amet consectetur</h3>
+
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quisquam molestias. Quaerat molestiae nam, explicabo quo nisi corporis! Blanditiis quam quibusdam, facilis nihil odio nisi iusto ipsa laborum neque fugit.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Next accordion row -->
+
+                    <div class="column is-10-tablet is-offset-1-tablet is-8-desktop is-offset-2-desktop">
+
+                        <div class="accordion-row box">
+
+                            <h3 class="h4 accordion-title">
+                                <!-- This controls the section. Toggling the state is done with JS -->
+                                <button
+                                    id="accordion-title-button-2"
+                                    class="accordion-title-button"
+                                    aria-expanded="false"
+                                    aria-controls="accordion-content-2">
+
+                                    <div class="level is-mobile">
+                                        <div class="level-left can-shrink">
+                                            <span class="level-item can-shrink has-text-left accordion-title-text">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit
+                                            </span>
+                                        </div>
+                                        <div class="level-right">
+                                            <span class="level-item icon accordion-title-icon">
+                                                <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </button>
+                            </h3>
+
+                            <!-- The ID of this element has to be dynamically added. -->
+                            <div id="accordion-content-2" class="accordion-content">
+                                <div class="content is-small">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quisquam molestias. Quaerat molestiae nam, explicabo quo nisi corporis! Blanditiis quam quibusdam, facilis nihil odio nisi iusto ipsa laborum neque fugit.</p>
+
+                                    <h3>Lorem ipsum dolor sit amet consectetur</h3>
+
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quisquam molestias. Quaerat molestiae nam, explicabo quo nisi corporis! Blanditiis quam quibusdam, facilis nihil odio nisi iusto ipsa laborum neque fugit.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- Next accordion row -->
+
+                    <div class="column is-10-tablet is-offset-1-tablet is-8-desktop is-offset-2-desktop">
+
+                        <div class="accordion-row box">
+
+                            <h3 class="h4 accordion-title">
+                                <!-- This controls the section. Toggling the state is done with JS -->
+                                <button
+                                    id="accordion-title-button-3"
+                                    class="accordion-title-button"
+                                    aria-expanded="false"
+                                    aria-controls="accordion-content-3">
+
+                                    <div class="level is-mobile">
+                                        <div class="level-left can-shrink">
+                                            <span class="level-item can-shrink has-text-left accordion-title-text">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit
+                                            </span>
+                                        </div>
+                                        <div class="level-right">
+                                            <span class="level-item icon accordion-title-icon">
+                                                <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </button>
+                            </h3>
+
+                            <!-- The ID of this element has to be dynamically added. -->
+                            <div id="accordion-content-3" class="accordion-content">
+                                <div class="content is-small">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quisquam molestias. Quaerat molestiae nam, explicabo quo nisi corporis! Blanditiis quam quibusdam, facilis nihil odio nisi iusto ipsa laborum neque fugit.</p>
+
+                                    <h3>Lorem ipsum dolor sit amet consectetur</h3>
+
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quisquam molestias. Quaerat molestiae nam, explicabo quo nisi corporis! Blanditiis quam quibusdam, facilis nihil odio nisi iusto ipsa laborum neque fugit.</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section">
+
+        <div class="columns is-multiline">
+            <div class="column is-10-tablet is-offset-1-tablet is-8-desktop is-offset-2-desktop">
+                <section class="bulmally-component-documentation container content" id="js-markdown">
+                </section>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+</html>

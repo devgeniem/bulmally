@@ -1,11 +1,10 @@
-// This file contains styles for the navbar component
-
+// This file contains styles for the navbar component.
 .bulmally-navbar {
 
     // Reset all buttons inside a navbar.
     button {
         background: none;
-        border: none;
+        border: 0;
     }
 
     .navbar-burger {
@@ -30,16 +29,19 @@
         }
     }
 
-    .navbar-item.has-dropdown {
-        &:hover, &.is-active {
-            background-color: $navbar-item-hover-background-color;
+    .navbar-item {
+        &.has-dropdown {
+            &:hover,
+            &.is-active {
+                background-color: $navbar-item-hover-background-color;
+            }
         }
     }
 
     .dropdown-toggler {
-        flex: 0 0 auto;
-        margin-right: 0.75rem;
         position: relative; // Make the arrow stick to the button.
+        flex: 0 0 auto;
+        margin-right: .75rem;
         transition: transform $speed $easing;
 
         &[aria-expanded="true"] {
@@ -48,8 +50,8 @@
 
         .arrow {
             @extend %arrow;
-            height: .75rem;
             width: .75rem;
+            height: .75rem;
             margin-top: -.5rem;
             border-color: $navbar-dropdown-arrow;
         }
