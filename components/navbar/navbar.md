@@ -210,12 +210,13 @@ export default class Navbar {
 We use the component class name as the CSS scope for our modifications for the basic Bulma CSS code. We keep the changes to a minimum and most of this code is applied to separate the dropdown toggler from the menu link containing a dropdown menu.
 
 ```
+// This file contains styles for the navbar component.
 .bulmally-navbar {
 
     // Reset all buttons inside a navbar.
     button {
         background: none;
-        border: none;
+        border: 0;
     }
 
     .navbar-burger {
@@ -240,16 +241,19 @@ We use the component class name as the CSS scope for our modifications for the b
         }
     }
 
-    .navbar-item.has-dropdown {
-        &:hover, &.is-active {
-            background-color: $navbar-item-hover-background-color;
+    .navbar-item {
+        &.has-dropdown {
+            &:hover,
+            &.is-active {
+                background-color: $navbar-item-hover-background-color;
+            }
         }
     }
 
     .dropdown-toggler {
-        flex: 0 0 auto;
-        margin-right: 0.75rem;
         position: relative; // Make the arrow stick to the button.
+        flex: 0 0 auto;
+        margin-right: .75rem;
         transition: transform $speed $easing;
 
         &[aria-expanded="true"] {
@@ -258,8 +262,8 @@ We use the component class name as the CSS scope for our modifications for the b
 
         .arrow {
             @extend %arrow;
-            height: .75rem;
             width: .75rem;
+            height: .75rem;
             margin-top: -.5rem;
             border-color: $navbar-dropdown-arrow;
         }
