@@ -2,6 +2,8 @@
 
 .bulmally-tabs {
 
-
+    &-panel[hidden] {
+        display: none;
+    }
 
 }

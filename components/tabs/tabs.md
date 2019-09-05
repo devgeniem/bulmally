@@ -4,7 +4,7 @@ _Add component specific documentation here._
 
 ### HTML
 
-_Document HTML  markup here and add the code block for easy copy-pasting._
+This component provides needed JavaScript functionalities to bring the Bulma tabs to life. To make the tabs accessible links are anchors for the content. When the user clicks a tab link focus is moved to the first element of the tab content. In order for this to work, the `href` attribute of the link must be the id of the first focusable element in the tab container.
 
 ```
 <button class="button button--boilerplate">Boilerplate</button>
