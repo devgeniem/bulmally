@@ -30,11 +30,11 @@ export default class Accordion {
         if ( this.mainContainer ) {
             this.dropdownTogglers = this.mainContainer.querySelectorAll( '.accordion-title-button' );
             this.dropdowns = this.mainContainer.querySelectorAll( '.accordion-content' );
-        }
 
-        // Hide all toggleable elements with JS.
-        for ( let i = 0; i < this.dropdowns.length; i++ ) {
-            this.dropdowns[ i ].classList.add( 'is-hidden' );
+            // Hide all toggleable elements with JS.
+            for ( let i = 0; i < this.dropdowns.length; i++ ) {
+                this.dropdowns[ i ].classList.add( 'is-hidden' );
+            }
         }
     }
 
