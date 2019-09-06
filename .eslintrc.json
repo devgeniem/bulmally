@@ -18,7 +18,8 @@
         }],
         "indent": [ "error", 4 ],
         "no-console": "off",
-        "no-alert": "off"
+        "no-alert": "off",
+        "no-lonely-if": "off"
     },
     "parserOptions": {
         "ecmaVersion": 6,
