@@ -1,4 +1,4 @@
-## Tabs
+## Tabs component
 
 This component provides the needed JavaScript functionalities for the [Bulma tabs](https://bulma.io/documentation/components/tabs/). Accessibility is implemented with JavaScript making the DOM as simple as possible. There are two tab elements on this page to demonstrate that you can have multiple tabs on the same page. All Bulma tab styles are supported.
 

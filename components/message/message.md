@@ -1,4 +1,4 @@
-## Message
+## Message component
 
 Bulma describes the [message component](https://bulma.io/documentation/components/message/) as a colored message block, to emphasize part of your page. Bulmally implements the closing functionality for it. We also modify the message HTML markup a little to make it semantically better.
 
