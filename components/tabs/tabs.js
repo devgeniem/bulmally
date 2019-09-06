@@ -69,7 +69,6 @@ export default class Tabs {
         const tabsContainer = tabsElement.querySelector( '.tabs' );
         const tablist = tabsContainer.querySelector( 'ul' );
         const tabs = tablist.querySelectorAll( 'a' );
-        const tabPanels = tabsElement.querySelectorAll( '.bulmally-tabs-panel' );
         const tabListItems = tablist.querySelectorAll( 'li' );
 
         // Store references to the first and the last tab for focus manipulations.
@@ -79,7 +78,7 @@ export default class Tabs {
         tablist.tabs = [];
         tablist.panels = [];
 
-        // Tabs must be initialized first.
+        // Initialize tabs.
         for ( let i = 0; i < tabs.length; i++ ) {
             this.initTab( tabs[ i ], tablist, i );
         }
