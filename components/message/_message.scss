@@ -1,0 +1,12 @@
+// This file contains styles of the message component
+
+.bulmally-message {
+
+    .message-header {
+        h1, h2, h3, h4, h5, h6 {
+            // Override heading weight.
+            font-weight: $message-header-weight;
+        }
+    }
+
+}

@@ -37,7 +37,7 @@ export default class Tabs {
         document.addEventListener(
             'DOMContentLoaded',
             () => {
-                this.findAllTabs();
+                this.initAllTabs();
             }
         );
     }
@@ -47,7 +47,7 @@ export default class Tabs {
      * This method should be run on document ready to initialize all
      * tabs in the DOM after the page is loaded.
      */
-    findAllTabs() {
+    initAllTabs() {
         this.allTabs = document.querySelectorAll( '.bulmally-tabs' );
 
         if ( ! this.allTabs ) {
@@ -66,9 +66,9 @@ export default class Tabs {
      * @param {HTMLElement} tabsElement Bulmally tabs container.
      */
     init( tabsElement ) {
-        const tablist = tabsElement.querySelector( '.bulmally-tabs-tablist' );
+        const tabsContainer = tabsElement.querySelector( '.tabs' );
+        const tablist = tabsContainer.querySelector( 'ul' );
         const tabs = tablist.querySelectorAll( 'a' );
-        const tabPanels = tabsElement.querySelectorAll( '.bulmally-tabs-panel' );
         const tabListItems = tablist.querySelectorAll( 'li' );
 
         // Store references to the first and the last tab for focus manipulations.
@@ -78,14 +78,9 @@ export default class Tabs {
         tablist.tabs = [];
         tablist.panels = [];
 
-        // Tabs must be initialized first.
+        // Initialize tabs.
         for ( let i = 0; i < tabs.length; i++ ) {
             this.initTab( tabs[ i ], tablist, i );
-        }
-
-        // After tabs, initalize the corresponding tabs.
-        for ( let i = 0; i < tabPanels.length; i++ ) {
-            this.initPanel( tabPanels[ i ], tabs[ i ], tablist, i );
         }
 
         for ( let i = 0; i < tabListItems.length; i++ ) {
@@ -114,7 +109,9 @@ export default class Tabs {
         // Store the index.
         tab.index = index;
 
+        // Initialize the corresponding panel.
         tab.panel = document.getElementById( panelId );
+        this.initPanel( tab.panel, tab, tablist, index );
 
         tab.role = 'tab';
         tab.setAttribute( 'aria-selected', 'false' );
