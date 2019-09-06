@@ -1,0 +1,26 @@
+
+.is-marginless-horizontally {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.is-marginless-vertically {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+.is-paddingless-horizontally {
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+}
+
+.is-paddingless-vertically {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.modal-close {
+    &:focus {
+        outline: $white dotted .125rem;
+    }
+}

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bulmally | Boilerplate component</title>
+
+    <!-- Include complete assets for each component -->
+    <script src="/dist/app.js"></script>
+    <link rel="stylesheet" type="text/css" href ="/dist/app.css" />
+    <script src="/dist/vendor.js"></script>
+    <link rel="stylesheet" type="text/html" href ="/dist/vendor.css" />
+
+    <!-- Include Font Awesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+</head>
+<body>
+
+    <!-- Component library navigation markup comes here -->
+    <nav class="section">
+        <a class="button is-primary" href="../../index.html#components">Back to component list</a>
+    </nav>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+
+                <!-- The button that controls opening the modal -->
+
+                <div class="column is-10-tablet is-offset-1-tablet is-8-desktop is-offset-2-desktop">
+
+                    <div class="section is-paddingless-horizontally">
+                        <button
+                            class="modal-button button is-large is-info"
+                            aria-expanded="false"
+                            aria-controls="js-bulmally-modal-1">
+                                Open modal
+                        </button>
+                        <button
+                            class="modal-button button is-large is-info"
+                            aria-expanded="false"
+                            aria-controls="js-bulmally-modal-2">
+                                Open another modal
+                        </button>
+                    </div>
+
+                    <div class="content">
+
+                        <h3>This content is here to demonstrate focus functionality in the modal container</h3>
+
+                        <p>Lorem ipsum dolor sit amet consectetur <a href="">adipisicing elit</a>. Aspernatur, quisquam molestias. Quaerat molestiae nam, explicabo quo nisi corporis! Blanditiis quam quibusdam, facilis nihil <a href="">odio nisi iusto</a> ipsa laborum neque fugit.</p>
+
+                        <h3>Lorem ipsum dolor sit amet consectetur</h3>
+
+                        <figure class="image is-marginless-horizontally">
+                            <img src="https://via.placeholder.com/1600x900.png?text=A+sample+image" alt="">
+                        </figure>
+
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quisquam molestias. Quaerat molestiae nam, <a href="">explicabo quo nisi corporis! Blanditiis quam quibusdam, facilis nihil</a> odio nisi iusto ipsa laborum neque fugit.</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+
+        <div class="columns is-multiline">
+            <div class="column is-10-tablet is-offset-1-tablet is-8-desktop is-offset-2-desktop">
+                <section class="bulmally-component-documentation container content" id="js-markdown">
+                </section>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Markup of the first modal -->
+
+    <div role="dialog"
+        id="js-bulmally-modal-1"
+        class="modal"
+        aria-modal="true"
+        aria-labelledby="js-bulmally-modal-1-title">
+
+        <div class="modal-background"></div>
+
+        <div class="modal-content has-background-white">
+
+            <section class="section">
+
+                <h3 id="js-bulmally-modal-1-title" class="h4 title" tabindex="0">Modal heading</h3>
+
+                <div class="content">
+
+                    <p>Lorem ipsum dolor sit amet consectetur <a href="">adipisicing elit</a>. Aspernatur, quisquam molestias. Quaerat molestiae nam, explicabo quo nisi corporis! Blanditiis quam quibusdam, facilis nihil <a href="">odio nisi iusto</a> ipsa laborum neque fugit.</p>
+
+                    <h3>Lorem ipsum dolor sit amet consectetur</h3>
+
+                    <figure class="image is-marginless-horizontally">
+                        <img src="https://via.placeholder.com/1600x900.png?text=A+sample+image" alt="">
+                    </figure>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quisquam molestias. Quaerat molestiae nam, <a href="">explicabo quo nisi corporis! Blanditiis quam quibusdam, facilis nihil</a> odio nisi iusto ipsa laborum neque fugit.</p>
+
+                    <button class="button modal-close-button is-danger is-large"
+                        aria-controls="js-bulmally-modal-1">
+                        Close modal
+                    </button>
+                </div>
+
+            </section>
+
+        </div>
+
+        <button class="modal-close is-large"
+            aria-label="close modal"
+            aria-controls="js-bulmally-modal-1"></button>
+
+    </div>
+
+    <!-- Markup of the second modal -->
+
+    <div role="dialog"
+    id="js-bulmally-modal-2"
+    class="modal"
+    aria-modal="true"
+    aria-labelledby="js-bulmally-modal-2-title">
+
+    <div class="modal-background"></div>
+
+    <div class="modal-content has-background-white">
+
+        <section class="section">
+
+            <h3 id="js-bulmally-modal-2-title" class="h4 title" tabindex="0">Second modal heading</h3>
+
+            <div class="content">
+
+                <p>Lorem ipsum dolor sit amet consectetur <a href="">adipisicing elit</a>. Aspernatur, quisquam molestias. Quaerat molestiae nam, explicabo quo nisi corporis! Blanditiis quam quibusdam, facilis nihil <a href="">odio nisi iusto</a> ipsa laborum neque fugit.</p>
+
+                <h3>Lorem ipsum dolor sit amet consectetur</h3>
+
+                <figure class="image is-marginless-horizontally">
+                    <img src="https://via.placeholder.com/1600x900.png?text=A+sample+image" alt="">
+                </figure>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quisquam molestias. Quaerat molestiae nam, <a href="">explicabo quo nisi corporis! Blanditiis quam quibusdam, facilis nihil</a> odio nisi iusto ipsa laborum neque fugit.</p>
+
+                <button class="button modal-close-button is-danger is-large"
+                    aria-controls="js-bulmally-modal-2">
+                    Close modal
+                </button>
+            </div>
+
+        </section>
+
+    </div>
+
+    <button class="modal-close is-large"
+        aria-label="close modal"
+        aria-controls="js-bulmally-modal-2"></button>
+
+    </div>
+
+</body>
+</html>
