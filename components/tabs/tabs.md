@@ -96,9 +96,6 @@ export default class Tabs {
      * because it exports a new instance of itself.
      */
     constructor() {
-        // This must be set for each component.
-        this.documentation = require( './tabs.md' );
-
         document.addEventListener(
             'DOMContentLoaded',
             () => {

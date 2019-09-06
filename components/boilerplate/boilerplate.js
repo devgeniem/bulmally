@@ -7,8 +7,7 @@
  */
 export default class BoilerPlate {
     /**
-     * This method is run automatically when the module is imported,
-     * because it exports a new instance of itself.
+     * Construct the component functionalities.
      */
     constructor() {
         this.cache();
