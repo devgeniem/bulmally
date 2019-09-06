@@ -1,20 +1,21 @@
 ## Tabs
 
-This component provides the needed JavaScript functionalities for the Bulma tabs. Accessibility is implemented with JavaScript making the DOM as simple as possible.
+This component provides the needed JavaScript functionalities for the [Bulma tabs](https://bulma.io/documentation/components/tabs/). Accessibility is implemented with JavaScript making the DOM as simple as possible. There are two tab elements on this page to demonstrate that you can have multiple tabs on the same page. All Bulma tab styles are supported.
 
 ### HTML
 
-To make tabs accessible, links are anchors to the corresponding tab panels. If JavaScript is successfully loaded, all tab containers are queried from the DOM and their functionalities are initialized on the document ready event.
+Bulma uses buttons as tabs. We use anchor links instead. This makes tabs accessible even if JavaScript is not available. Each tab is an anchor link taking the user to the corresponding tab panel. If JavaScript is successfully loaded, all tab containers are queried from the DOM and their functionalities are initialized on the document ready event.
 
 ### Requirements
 
+- Add a container for the tabs and the panels with a class named _"bulmally-tabs"_.
 - The _href_ attribute of the link must be the id of the tab panel. This enables linking the tab to the panel.
-- The panels must have a class name of "bulmally-tabs-panel".
+- The tab panels should be placed directly after the tabs to create a logical tab order.
 
 ```
 <div class="bulmally-tabs">
     <div class="tabs">
-        <ul class="bulmally-tabs-tablist" aria-label="Give some descriptive name for your tabs here">
+        <ul aria-label="Add a description for the tabs here">
             <li class="is-active"><a href="#first">First</a></li>
             <li><a href="#second">Second</a></li>
             <li><a href="#third">Third</a></li>
@@ -23,16 +24,16 @@ To make tabs accessible, links are anchors to the corresponding tab panels. If J
     </div>
 
     <div>
-        <div class="bulmally-tabs-panel" id="first">
+        <div id="first">
             <h2>First</h2>
         </div>
-        <div class="bulmally-tabs-panel" id="second">
+        <div id="second">
             <h2>Second</h2>
         </div>
-        <div class="bulmally-tabs-panel" id="third">
+        <div id="third">
             <h2>Third</h2>
         </div>
-        <div class="bulmally-tabs-panel" id="fourth">
+        <div id="fourth">
             <h2>Fourth</h2>
         </div>
     </div>
@@ -42,7 +43,7 @@ To make tabs accessible, links are anchors to the corresponding tab panels. If J
 
 ### SCSS
 
-The only thing we give style here is the hidden state of the panels. We leave further customizations for you.
+The only styling required is the hidden state of the panels. This is done by using the _"hidden"_ attribute as the CSS selector.
 
 ```
 .bulmally-tabs {
@@ -56,7 +57,14 @@ The only thing we give style here is the hidden state of the panels. We leave fu
 
 ### JavaScript
 
-_TODO: Document JavaScript markup here_
+Bulmally tabs implements the WAI-ARIA [tabs design pattern](https://www.w3.org/TR/wai-aria-practices/#tabpanel). JavaScript code is based on the WAI-ARIA example for [manually activated tabs]((https://www.w3.org/TR/wai-aria-practices/examples/tabs/tabs-2/tabs.html)). The implementation provides the following features:
+
+- Tab navigation with arrow keys.
+- Tab panel activation by pressing enter or space on the focused tab.
+- Tab panel activation on mouse click event.
+- Focus handling for all interactions.
+
+We extended the WAI-ARIA example with the ability to have multiple tab elements on the same page. If you create tabs dynamically _(after the document ready event)_, you can initialize their accessibility features by passing the Bulmally tabs element container for the _init()_ method. You can find an example of this in the _initAllTabs()_ method that finds and initializes all Bulmally tab elements on the document ready event.
 
 ```
 // For easy reference
@@ -94,7 +102,7 @@ export default class Tabs {
         document.addEventListener(
             'DOMContentLoaded',
             () => {
-                this.findAllTabs();
+                this.initAllTabs();
             }
         );
     }
@@ -104,7 +112,7 @@ export default class Tabs {
      * This method should be run on document ready to initialize all
      * tabs in the DOM after the page is loaded.
      */
-    findAllTabs() {
+    initAllTabs() {
         this.allTabs = document.querySelectorAll( '.bulmally-tabs' );
 
         if ( ! this.allTabs ) {
