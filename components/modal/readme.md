@@ -6,7 +6,7 @@ This component provides the needed JavaScript functionalities for the [Bulma mod
 
 The accessibility-ready status of this component is: untested.
 
-- [ ] Keyboard-only
+- [x] Keyboard-only
 - [ ] VoiceOver & Safari (macOS)
 - [ ] VoiceOver & Safari (iOS)
 - [ ] VoiceOver & Safari (iPadOS)
