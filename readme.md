@@ -2,9 +2,9 @@
 
 ### An accessibility ready frontend component framework for streamlining web development
 
-This project contains a library of frontend components ready to be picked for use in web development projects. Each component has its own markup, styles and JS files if needed.
+This project contains a library of frontend components ready to be picked for use in web development projects. Each component has its own markup, styles and JS files if needed. Most of the CSS comes from the Bulma framework (https://bulma.io/), but our components contain some additional styles.
 
-The visual representation of the component library can be found in https://{TODO}.io
+The visual representation of the component library can be found in https://devgeniem.github.io/bulmally/
 
 ## Usage
 
