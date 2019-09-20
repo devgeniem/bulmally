@@ -2,6 +2,19 @@
 
 Bulma describes the [message component](https://bulma.io/documentation/components/message/) as a colored message block, to emphasize part of your page. Bulmally implements the closing functionality for it. We also modify the message HTML markup a little to make it semantically better.
 
+### Tests and accessibility status
+
+The accessibility-ready status of this component is: untested.
+
+- [ ] Keyboard-only
+- [ ] VoiceOver & Safari (macOS)
+- [ ] VoiceOver & Safari (iOS)
+- [ ] VoiceOver & Safari (iPadOS)
+- [ ] Talkback & Chrome (Android)
+- [ ] Narrator & Edge (Windows)
+- [ ] NVDA & Firefox (Windows)
+- [ ] Windows High Contrast mode
+
 ### HTML
 
 Instead of an article, we encourage to use a section tag for the message container. Heading should be inside a header element and the heading should have a heading tag with a level following the structure of your page. As an example, we use _h2_ since the element probably does not contain the main heading of a page. Inside the delete button, you should add a descriptive text inside the span element targeted for screen readers. Using a span element instead of _aria-label_ we support language translators that do not translate HTML attributes _(e.g. Google Translate)_.

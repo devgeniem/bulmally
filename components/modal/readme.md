@@ -2,6 +2,19 @@
 
 This component provides the needed JavaScript functionalities for the [Bulma modal](https://bulma.io/documentation/components/modal/). Accessibility is implemented with JavaScript making the DOM as simple as possible. There are two modal elements on this page to demonstrate that you can have multiple modals on the same page. All Bulma modal styles are supported.
 
+### Tests and accessibility status
+
+The accessibility-ready status of this component is: untested.
+
+- [ ] Keyboard-only
+- [ ] VoiceOver & Safari (macOS)
+- [ ] VoiceOver & Safari (iOS)
+- [ ] VoiceOver & Safari (iPadOS)
+- [ ] Talkback & Chrome (Android)
+- [ ] Narrator & Edge (Windows)
+- [ ] NVDA & Firefox (Windows)
+- [ ] Windows High Contrast mode
+
 ### HTML
 
 The HTML markup is fairly simple. You need to have a button that controls a corresponding modal. In the modal overlay you may want to have a closing button although it is not necessary. Modals can also be closed with ESC and buttons inside them with __modal-close-button__ classes.

@@ -2,6 +2,19 @@
 
 This component provides a fully functional navbar implementation for the Bulma navbar component.
 
+### Tests and accessibility status
+
+The accessibility-ready status of this component is: untested.
+
+- [ ] Keyboard-only
+- [ ] VoiceOver & Safari (macOS)
+- [ ] VoiceOver & Safari (iOS)
+- [ ] VoiceOver & Safari (iPadOS)
+- [ ] Talkback & Chrome (Android)
+- [ ] Narrator & Edge (Windows)
+- [ ] NVDA & Firefox (Windows)
+- [ ] Windows High Contrast mode
+
 ### HTML
 
 The Bulmally navbar follows the Bulma navbar markup with some exceptions. Hoverable dropdowns are not accessible, that is why we do not support them. Instead, we provide an accessible markup for controlling a dropdown menu within the navbar.

@@ -2,6 +2,19 @@
 
 This component provides the needed JavaScript functionalities for the [Bulma tabs](https://bulma.io/documentation/components/tabs/). Accessibility is implemented with JavaScript making the DOM as simple as possible. There are two tab elements on this page to demonstrate that you can have multiple tabs on the same page. All Bulma tab styles are supported.
 
+### Tests and accessibility status
+
+The accessibility-ready status of this component is: untested.
+
+- [ ] Keyboard-only
+- [ ] VoiceOver & Safari (macOS)
+- [ ] VoiceOver & Safari (iOS)
+- [ ] VoiceOver & Safari (iPadOS)
+- [ ] Talkback & Chrome (Android)
+- [ ] Narrator & Edge (Windows)
+- [ ] NVDA & Firefox (Windows)
+- [ ] Windows High Contrast mode
+
 ### HTML
 
 Bulma uses buttons as tabs. We use anchor links instead. This makes tabs accessible even if JavaScript is not available. Each tab is an anchor link taking the user to the corresponding tab panel. If JavaScript is successfully loaded, all tab containers are queried from the DOM and their functionalities are initialized on the document ready event.

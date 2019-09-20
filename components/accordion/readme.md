@@ -2,6 +2,19 @@
 
 This component provides an accordion functionality with added accessible JS implementation.
 
+### Tests and accessibility status
+
+The accessibility-ready status of this component is: untested.
+
+- [ ] Keyboard-only
+- [ ] VoiceOver & Safari (macOS)
+- [ ] VoiceOver & Safari (iOS)
+- [ ] VoiceOver & Safari (iPadOS)
+- [ ] Talkback & Chrome (Android)
+- [ ] Narrator & Edge (Windows)
+- [ ] NVDA & Firefox (Windows)
+- [ ] Windows High Contrast mode
+
 ### HTML
 
 The Bulmally accordion's titles are inside a button so that they are focusable and clickable.
