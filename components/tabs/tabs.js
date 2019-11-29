@@ -193,7 +193,7 @@ export default class Tabs {
         case keys.enter:
         case keys.space:
             event.preventDefault();
-            this.activateTab( event.target, true );
+            this.activateTab( event.target, false );
             break;
         }
     }
