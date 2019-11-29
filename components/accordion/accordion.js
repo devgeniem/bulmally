@@ -11,7 +11,7 @@ export default class Accordion {
      */
     constructor() {
         // This must be set for each component.
-        this.documentation = require( './accordion.md' );
+        this.documentation = require( './readme.md' );
 
         document.addEventListener(
             'DOMContentLoaded',

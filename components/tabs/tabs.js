@@ -32,7 +32,7 @@ export default class Tabs {
      */
     constructor() {
         // This must be set for each component.
-        this.documentation = require( './tabs.md' );
+        this.documentation = require( './readme.md' );
 
         document.addEventListener(
             'DOMContentLoaded',

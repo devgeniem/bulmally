@@ -2,9 +2,9 @@
 
 ### An accessibility ready frontend component framework for streamlining web development
 
-This project contains a library of frontend components ready to be picked for use in web development projects. Each component has its own markup, styles and JS files if needed.
+This project contains a library of frontend components ready to be picked for use in web development projects. Each component has its own markup, styles and JS files if needed. Most of the CSS comes from the Bulma framework (https://bulma.io/), but our components contain some additional styles.
 
-The visual representation of the component library can be found in https://{TODO}.io
+The visual representation of the component library can be found in https://devgeniem.github.io/bulmally/
 
 ## Usage
 
@@ -39,3 +39,17 @@ need to follow these steps:
 2. Navigate to the desired component folder and open its files you want to modify
 3. Modify the files and check that they're loaded.
 4. Save, copy or commit the changes depending on your use case and you're done!
+
+## Components
+
+Each component has its own readme file with instructions for use and information on its accessibility-ready status.
+
+* [Accordion](/components/accordion)
+* [Message](/components/message)
+* [Modal](/components/modal)
+* [Navbar](/components/navbar)
+* [Tabs](/components/tabs)
+ 
+### Planned components
+
+* Card (with accessible examples)

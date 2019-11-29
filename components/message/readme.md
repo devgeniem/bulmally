@@ -1,6 +1,19 @@
-## Message
+## Message component
 
 Bulma describes the [message component](https://bulma.io/documentation/components/message/) as a colored message block, to emphasize part of your page. Bulmally implements the closing functionality for it. We also modify the message HTML markup a little to make it semantically better.
+
+### Tests and accessibility status
+
+The accessibility-ready status of this component is: untested.
+
+- [ ] Keyboard-only
+- [ ] VoiceOver & Safari (macOS)
+- [ ] VoiceOver & Safari (iOS)
+- [ ] VoiceOver & Safari (iPadOS)
+- [ ] Talkback & Chrome (Android)
+- [ ] Narrator & Edge (Windows)
+- [ ] NVDA & Firefox (Windows)
+- [ ] Windows High Contrast mode
 
 ### HTML
 

@@ -2,6 +2,19 @@
 
 This component provides a fully functional navbar implementation for the Bulma navbar component.
 
+### Tests and accessibility status
+
+The accessibility-ready status of this component is: untested.
+
+- [x] Keyboard-only
+- [x] VoiceOver & Safari (macOS)
+- [ ] VoiceOver & Safari (iOS)
+- [ ] VoiceOver & Safari (iPadOS)
+- [ ] Talkback & Chrome (Android)
+- [ ] Narrator & Edge (Windows)
+- [ ] NVDA & Firefox (Windows)
+- [ ] Windows High Contrast mode
+
 ### HTML
 
 The Bulmally navbar follows the Bulma navbar markup with some exceptions. Hoverable dropdowns are not accessible, that is why we do not support them. Instead, we provide an accessible markup for controlling a dropdown menu within the navbar.
@@ -31,11 +44,11 @@ The Bulma documentation uses a link as the dropdown toggler. This is bad practic
 
     <div id="js-navbar-menu" class="navbar-menu">
         <div class="navbar-start">
-            <a class="navbar-item">
+            <a class="navbar-item" href="#">
                 Home
             </a>
 
-            <a class="navbar-item">
+            <a class="navbar-item" href="#">
                 Documentation
             </a>
 
@@ -58,17 +71,17 @@ The Bulma documentation uses a link as the dropdown toggler. This is bad practic
                     Toggling is handled with JS.
                 -->
                 <div class="navbar-dropdown is-hidden-touch" id="js-navbar-dropdown-1">
-                    <a class="navbar-item">
+                    <a class="navbar-item" href="#">
                         About
                     </a>
-                    <a class="navbar-item">
+                    <a class="navbar-item" href="#">
                         Jobs
                     </a>
-                    <a class="navbar-item">
+                    <a class="navbar-item" href="#">
                         Contact
                     </a>
                     <hr class="navbar-divider">
-                    <a class="navbar-item">
+                    <a class="navbar-item" href="#">
                         Report an issue
                     </a>
                 </div>
@@ -78,10 +91,10 @@ The Bulma documentation uses a link as the dropdown toggler. This is bad practic
         <div class="navbar-end">
             <div class="navbar-item">
                 <div class="buttons">
-                    <a class="button is-primary">
+                    <a class="button is-primary" href="#">
                         <strong>Sign up</strong>
                     </a>
-                    <a class="button is-light">
+                    <a class="button is-light" href="#">
                         Log in
                     </a>
                 </div>

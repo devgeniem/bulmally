@@ -1,6 +1,23 @@
-## Tabs
+## Tabs component
 
 This component provides the needed JavaScript functionalities for the [Bulma tabs](https://bulma.io/documentation/components/tabs/). Accessibility is implemented with JavaScript making the DOM as simple as possible. There are two tab elements on this page to demonstrate that you can have multiple tabs on the same page. All Bulma tab styles are supported.
+
+### Tests and accessibility status
+
+The accessibility-ready status of this component is: untested.
+
+- [x] Keyboard-only
+- [ ] VoiceOver & Safari (macOS)
+- [ ] VoiceOver & Safari (iOS)
+- [ ] VoiceOver & Safari (iPadOS)
+- [ ] Talkback & Chrome (Android)
+- [ ] Narrator & Edge (Windows)
+- [ ] NVDA & Firefox (Windows)
+- [ ] Windows High Contrast mode
+
+### Known issues
+
+- In VO & Safari (macOS), all tabs are navigable with tab key, even though they should be navigable only with arrow keys
 
 ### HTML
 
