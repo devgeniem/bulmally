@@ -8,7 +8,7 @@ The accessibility-ready status of this component is: untested.
 
 - [x] Keyboard-only
 - [x] VoiceOver & Safari (macOS)
-- [ ] VoiceOver & Safari (iOS)
+- [x] VoiceOver & Safari (iOS)
 - [ ] VoiceOver & Safari (iPadOS)
 - [ ] Talkback & Chrome (Android)
 - [ ] Narrator & Edge (Windows)
