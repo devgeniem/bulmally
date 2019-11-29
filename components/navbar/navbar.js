@@ -11,7 +11,7 @@ export default class Navbar {
      */
     constructor() {
         // This must be set for each component.
-        this.documentation = require( './navbar.md' );
+        this.documentation = require( './readme.md' );
 
         document.addEventListener(
             'DOMContentLoaded',

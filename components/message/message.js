@@ -11,7 +11,7 @@ export default class Message {
      */
     constructor() {
         // This must be set for each component.
-        this.documentation = require( './message.md' );
+        this.documentation = require( './readme.md' );
 
         document.addEventListener(
             'DOMContentLoaded',

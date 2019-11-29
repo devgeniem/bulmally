@@ -11,7 +11,7 @@ export default class Modal {
      */
     constructor() {
         // This must be set for each component.
-        this.documentation = require( './modal.md' );
+        this.documentation = require( './readme.md' );
 
         document.addEventListener(
             'DOMContentLoaded',

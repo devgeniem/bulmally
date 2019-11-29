@@ -13,7 +13,7 @@ export default class BoilerPlate {
         this.cache();
 
         // This must be set for each component.
-        this.documentation = require( './boilerplate.md' );
+        this.documentation = require( './readme.md' );
 
         document.addEventListener(
             'DOMContentLoaded',
