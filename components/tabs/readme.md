@@ -6,7 +6,7 @@ This component provides the needed JavaScript functionalities for the [Bulma tab
 
 The accessibility-ready status of this component is: untested.
 
-- [ ] Keyboard-only
+- [x] Keyboard-only
 - [ ] VoiceOver & Safari (macOS)
 - [ ] VoiceOver & Safari (iOS)
 - [ ] VoiceOver & Safari (iPadOS)
@@ -14,6 +14,10 @@ The accessibility-ready status of this component is: untested.
 - [ ] Narrator & Edge (Windows)
 - [ ] NVDA & Firefox (Windows)
 - [ ] Windows High Contrast mode
+
+### Known issues
+
+- In VO & Safari (macOS), all tabs are navigable with tab key, even though they should be navigable only with arrow keys
 
 ### HTML
 
