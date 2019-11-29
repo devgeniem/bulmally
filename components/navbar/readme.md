@@ -6,7 +6,7 @@ This component provides a fully functional navbar implementation for the Bulma n
 
 The accessibility-ready status of this component is: untested.
 
-- [ ] Keyboard-only
+- [x] Keyboard-only
 - [ ] VoiceOver & Safari (macOS)
 - [ ] VoiceOver & Safari (iOS)
 - [ ] VoiceOver & Safari (iPadOS)
