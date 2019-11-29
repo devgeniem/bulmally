@@ -7,9 +7,9 @@ This component provides the needed JavaScript functionalities for the [Bulma tab
 The accessibility-ready status of this component is: untested.
 
 - [x] Keyboard-only
-- [ ] VoiceOver & Safari (macOS)
-- [ ] VoiceOver & Safari (iOS)
-- [ ] VoiceOver & Safari (iPadOS)
+- [x] VoiceOver & Safari (macOS)
+- [x] VoiceOver & Safari (iOS)
+- [x] VoiceOver & Safari (iPadOS)
 - [ ] Talkback & Chrome (Android)
 - [ ] Narrator & Edge (Windows)
 - [ ] NVDA & Firefox (Windows)
