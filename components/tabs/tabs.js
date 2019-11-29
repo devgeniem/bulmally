@@ -78,6 +78,9 @@ export default class Tabs {
         tablist.tabs = [];
         tablist.panels = [];
 
+        // Set tablist role
+        tablist.setAttribute( 'role', 'tablist' );
+
         // Initialize tabs.
         for ( let i = 0; i < tabs.length; i++ ) {
             this.initTab( tabs[ i ], tablist, i );
@@ -87,6 +90,9 @@ export default class Tabs {
             // All <li> elements must have a role of presentation.
             tabListItems[ i ].setAttribute( 'role', 'presentation' );
         }
+
+        // Activate the first tab
+        this.activateTab( tablist.firstTab );
     }
 
     /**
@@ -113,10 +119,10 @@ export default class Tabs {
         tab.panel = document.getElementById( panelId );
         this.initPanel( tab.panel, tab, tablist, index );
 
-        tab.role = 'tab';
+        tab.setAttribute( 'role', 'tab' );
         tab.setAttribute( 'aria-selected', 'false' );
         tab.setAttribute( 'aria-controls', panelId );
-        tab.tabindex = -1;
+        tab.setAttribute( 'tabindex', '-1' );
 
         tab.addEventListener( 'click', ( event ) => this.clickEventListener( event ) );
         tab.addEventListener( 'keydown', ( event ) => this.keydownEventListener( event ) );
