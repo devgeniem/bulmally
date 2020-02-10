@@ -1,6 +1,6 @@
 {
   "name": "bulmally",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A frontend component framework for streamlining accessible web development projects.",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
