@@ -84,6 +84,10 @@ Bulmally tabs implements the WAI-ARIA [tabs design pattern](https://www.w3.org/T
 We extended the WAI-ARIA example with the ability to have multiple tab elements on the same page. If you create tabs dynamically _(after the document ready event)_, you can initialize their accessibility features by passing the Bulmally tabs element container for the _init()_ method. You can find an example of this in the _initAllTabs()_ method that finds and initializes all Bulmally tab elements on the document ready event.
 
 ```
+/**
+ * Tabs JS controller.
+ */
+
 // For easy reference
 const keys = {
     end: 35,
@@ -113,6 +117,9 @@ export default class Tabs {
      * because it exports a new instance of itself.
      */
     constructor() {
+        // This must be set for each component.
+        this.documentation = require( './readme.md' );
+
         document.addEventListener(
             'DOMContentLoaded',
             () => {
@@ -145,9 +152,9 @@ export default class Tabs {
      * @param {HTMLElement} tabsElement Bulmally tabs container.
      */
     init( tabsElement ) {
-        const tablist = tabsElement.querySelector( '.bulmally-tabs-tablist' );
+        const tabsContainer = tabsElement.querySelector( '.tabs' );
+        const tablist = tabsContainer.querySelector( 'ul' );
         const tabs = tablist.querySelectorAll( 'a' );
-        const tabPanels = tabsElement.querySelectorAll( '.bulmally-tabs-panel' );
         const tabListItems = tablist.querySelectorAll( 'li' );
 
         // Store references to the first and the last tab for focus manipulations.
@@ -157,20 +164,21 @@ export default class Tabs {
         tablist.tabs = [];
         tablist.panels = [];
 
-        // Tabs must be initialized first.
+        // Set tablist role
+        tablist.setAttribute( 'role', 'tablist' );
+
+        // Initialize tabs.
         for ( let i = 0; i < tabs.length; i++ ) {
             this.initTab( tabs[ i ], tablist, i );
-        }
-
-        // After tabs, initalize the corresponding tabs.
-        for ( let i = 0; i < tabPanels.length; i++ ) {
-            this.initPanel( tabPanels[ i ], tabs[ i ], tablist, i );
         }
 
         for ( let i = 0; i < tabListItems.length; i++ ) {
             // All <li> elements must have a role of presentation.
             tabListItems[ i ].setAttribute( 'role', 'presentation' );
         }
+
+        // Activate the first tab
+        this.activateTab( tablist.firstTab );
     }
 
     /**
@@ -193,12 +201,14 @@ export default class Tabs {
         // Store the index.
         tab.index = index;
 
+        // Initialize the corresponding panel.
         tab.panel = document.getElementById( panelId );
+        this.initPanel( tab.panel, tab, tablist, index );
 
-        tab.role = 'tab';
+        tab.setAttribute( 'role', 'tab' );
         tab.setAttribute( 'aria-selected', 'false' );
         tab.setAttribute( 'aria-controls', panelId );
-        tab.tabindex = -1;
+        tab.setAttribute( 'tabindex', '-1' );
 
         tab.addEventListener( 'click', ( event ) => this.clickEventListener( event ) );
         tab.addEventListener( 'keydown', ( event ) => this.keydownEventListener( event ) );
@@ -269,7 +279,7 @@ export default class Tabs {
         case keys.enter:
         case keys.space:
             event.preventDefault();
-            this.activateTab( event.target, true );
+            this.activateTab( event.target, false );
             break;
         }
     }
@@ -404,5 +414,6 @@ export default class Tabs {
         tablist.lastTab.focus();
     }
 }
+
 ```
 
