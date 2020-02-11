@@ -17,7 +17,7 @@ The accessibility-ready status of this component is: untested.
 
 ### Known issues
 
-- In VO & Safari (macOS), all tabs are navigable with tab key, even though they should be navigable only with arrow keys
+
 
 ### HTML
 
