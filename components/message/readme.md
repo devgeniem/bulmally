@@ -6,9 +6,9 @@ Bulma describes the [message component](https://bulma.io/documentation/component
 
 The accessibility-ready status of this component is: untested.
 
-- [ ] Keyboard-only
-- [ ] VoiceOver & Safari (macOS)
-- [ ] VoiceOver & Safari (iOS)
+- [x] Keyboard-only
+- [x] VoiceOver & Safari (macOS)
+- [x] VoiceOver & Safari (iOS)
 - [ ] VoiceOver & Safari (iPadOS)
 - [ ] Talkback & Chrome (Android)
 - [ ] Narrator & Edge (Windows)
