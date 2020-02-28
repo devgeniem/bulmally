@@ -13,7 +13,7 @@ The accessibility-ready status of this component is: untested.
 - [ ] Talkback & Chrome (Android)
 - [ ] Narrator & Edge (Windows)
 - [ ] NVDA & Firefox (Windows)
-- [ ] Windows High Contrast mode
+- [x] Windows High Contrast mode
 
 ### HTML
 
